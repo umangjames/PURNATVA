@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>PURVATVA — Dhaulas, Dehradun | Cliff Pe Plot</title>
+<meta name="description" content="Dehradun ke Dhaulas mein limited plots — Noon Nadi cliff pe. Marriott Le Méridien ke paas. Mussoorie view. ₹35,000/gaj se.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest: #0D1F0D;
+  --forest-mid: #1A3020;
+  --forest-lt: #2D5A3D;
+  --gold: #B8860B;
+  --gold-lt: #D4A017;
+  --gold-pale: #FFF8E1;
+  --gold-border: #F0C040;
+  --cream: #FDFAF4;
+  --cream-dk: #F5EDD8;
+  --green-pale: #E8F5E9;
+  --green-ok: #1B5E20;
+  --green-mid: #2E7D32;
+  --amber-bg: #FFF3CD;
+  --amber: #E65100;
+  --blue-pale: #E3F2FD;
+  --blue-dark: #0D47A1;
+  --red-pale: #FFEBEE;
+  --red-dk: #B71C1C;
+  --white: #ffffff;
+  --black: #1A1A1A;
+  --dark: #333333;
+  --mid: #555555;
+  --light: #888888;
+  --border: #DDDDDD;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--black);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── STICKY WHATSAPP ── */
+.float-wa {
+  position: fixed; bottom: 20px; right: 18px; z-index: 999;
+  background: #25D366; color: white;
+  padding: 14px 20px; border-radius: 50px;
+  font-size: 15px; font-weight: 600; text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+  display: flex; align-items: center; gap: 8px;
+  animation: pulse-wa 2.5s infinite;
+}
+@keyframes pulse-wa {
+  0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 4px 32px rgba(37,211,102,0.8); }
+}
+
+/* ── SECTIONS ── */
+.sec { padding: 56px 20px; max-width: 640px; margin: 0 auto; }
+.sec-full { padding: 56px 20px; }
+.sec-full-inner { max-width: 640px; margin: 0 auto; }
+
+/* ── TYPOGRAPHY ── */
+.eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 3.5px;
+  text-transform: uppercase; color: var(--gold);
+  display: block; margin-bottom: 12px;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 9vw, 52px);
+  line-height: 1.15; font-weight: 700;
+  color: var(--black); margin-bottom: 16px;
+}
+h1 em { color: var(--gold); font-style: italic; }
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 7vw, 40px);
+  line-height: 1.2; font-weight: 700;
+  color: var(--black); margin-bottom: 14px;
+}
+h2.light { color: white; }
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 5vw, 26px);
+  font-weight: 600; color: var(--black);
+  margin-bottom: 10px;
+}
+p { font-size: 16px; line-height: 1.8; color: var(--mid); margin-bottom: 14px; }
+p.large { font-size: 18px; line-height: 1.85; }
+p.light { color: rgba(255,255,255,0.8); }
+p strong { color: var(--black); font-weight: 600; }
+
+.gold-hr {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-border), transparent);
+  border: none; margin: 20px 0;
+}
+
+/* ── COVER ── */
+.cover {
+  background: var(--forest);
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 60px 24px 40px;
+  position: relative; overflow: hidden;
+}
+.cover::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(184,134,11,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(45,90,61,0.25) 0%, transparent 50%);
+  pointer-events: none;
+}
+.cover-tag {
+  display: inline-block;
+  border: 1px solid rgba(184,134,11,0.5);
+  color: var(--gold-border); font-size: 11px;
+  letter-spacing: 4px; text-transform: uppercase;
+  padding: 6px 18px; border-radius: 20px;
+  margin-bottom: 24px;
+  animation: fadeDown 0.8s ease both;
+}
+.cover h1 {
+  color: white; font-size: clamp(48px, 14vw, 80px);
+  letter-spacing: 4px; font-weight: 900;
+  margin-bottom: 16px;
+  animation: fadeDown 0.8s 0.1s ease both;
+  text-shadow: 0 2px 40px rgba(0,0,0,0.4);
+}
+.cover-sub {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(18px, 5vw, 24px);
+  color: rgba(255,240,180,0.9); font-style: italic;
+  margin-bottom: 36px; line-height: 1.5;
+  animation: fadeDown 0.8s 0.2s ease both;
+}
+.cover-stats {
+  display: flex; gap: 0; margin-bottom: 36px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px; overflow: hidden;
+  animation: fadeUp 0.8s 0.3s ease both;
+  width: 100%; max-width: 400px;
+}
+.cstat {
+  flex: 1; padding: 16px 8px; text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.cstat:last-child { border-right: none; }
+.cstat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 6vw, 30px);
+  font-weight: 700; color: var(--gold-border);
+  display: block; line-height: 1.1;
+}
+.cstat-lbl {
+  font-size: 10px; color: rgba(255,255,255,0.5);
+  letter-spacing: 1px; text-transform: uppercase;
+  display: block; margin-top: 3px;
+}
+.cover-cta {
+  display: flex; flex-direction: column; gap: 12px;
+  align-items: center;
+  animation: fadeUp 0.8s 0.4s ease both;
+}
+.btn-wa {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #25D366; color: white;
+  padding: 16px 32px; border-radius: 8px;
+  font-size: 17px; font-weight: 700; text-decoration: none;
+  box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+}
+.btn-outline {
+  color: rgba(255,255,255,0.6); font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 2px;
+}
+.scroll-hint {
+  position: absolute; bottom: 24px;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 6px;
+  animation: bounce 2s infinite;
+}
+.scroll-hint span { font-size: 10px; letter-spacing: 3px; color: rgba(255,255,255,0.3); }
+.arrow-down {
+  width: 18px; height: 18px;
+  border-right: 2px solid rgba(255,255,255,0.25);
+  border-bottom: 2px solid rgba(255,255,255,0.25);
+  transform: rotate(45deg);
+}
+
+/* ── LOCATION STRIP ── */
+.loc-strip {
+  background: var(--blue-pale);
+  border: 1.5px solid var(--blue-dark);
+  border-radius: 10px; padding: 16px 18px;
+  margin-bottom: 20px;
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.loc-strip .icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.loc-strip p { margin: 0; font-size: 14px; color: var(--dark); }
+.loc-strip a { color: var(--blue-dark); font-weight: 600; }
+
+/* ── STORY SECTION ── */
+.story-sec { background: var(--white); }
+.pull-quote {
+  background: var(--gold-pale);
+  border-left: 5px solid var(--gold-border);
+  border-radius: 0 8px 8px 0;
+  padding: 20px 20px 20px 22px;
+  margin: 24px 0;
+}
+.pull-quote p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(18px, 5vw, 22px);
+  color: var(--forest); font-style: italic;
+  line-height: 1.5; margin: 0;
+}
+.reveal-box {
+  background: var(--forest);
+  border: 2px solid var(--gold-border);
+  border-radius: 12px; padding: 24px;
+  margin-top: 24px;
+}
+.reveal-box p { color: rgba(255,255,255,0.9); margin: 0; font-size: 16px; }
+.reveal-box strong { color: var(--gold-border); }
+.big-reveal {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 8vw, 46px);
+  font-weight: 700; color: var(--black);
+  line-height: 1.1; margin: 16px 0 6px;
+}
+.math-badge {
+  display: inline-block;
+  background: var(--green-pale);
+  color: var(--green-ok); font-weight: 700;
+  font-size: 15px; padding: 8px 16px;
+  border-radius: 6px; margin-bottom: 20px;
+  border: 1px solid var(--green-mid);
+}
+
+/* ── CLIFF SECTION ── */
+.cliff-sec {
+  background: linear-gradient(170deg, #0a1a0a 0%, #1a3020 100%);
+  text-align: center; padding: 60px 24px;
+}
+.cliff-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(96px, 26vw, 140px);
+  font-weight: 900; color: var(--gold-border);
+  line-height: 0.9; display: block;
+  text-shadow: 0 4px 60px rgba(184,134,11,0.3);
+}
+.cliff-unit {
+  font-size: clamp(18px, 5vw, 26px);
+  font-weight: 700; color: white;
+  letter-spacing: 6px; display: block;
+  margin-top: 8px;
+}
+.cliff-sub {
+  font-size: 16px; color: rgba(255,255,255,0.65);
+  margin-top: 12px; display: block;
+}
+.forest-badge {
+  background: var(--green-pale);
+  border: 1.5px solid var(--green-mid);
+  border-radius: 10px; padding: 16px 18px;
+  margin-top: 28px; text-align: left;
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.forest-badge .icon { font-size: 22px; flex-shrink: 0; }
+.forest-badge p { margin: 0; font-size: 14px; color: var(--dark); }
+
+/* ── MARRIOTT SECTION ── */
+.marriott-sec { background: var(--cream); }
+.hotel-card {
+  background: white;
+  border: 2px solid var(--gold-border);
+  border-radius: 14px; padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.stars-row { color: var(--gold); font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+.hotel-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 5.5vw, 28px);
+  font-weight: 700; color: var(--black);
+  margin-bottom: 8px; line-height: 1.2;
+}
+.hotel-meta { font-size: 13px; color: var(--mid); line-height: 1.7; margin-bottom: 16px; }
+.dist-row {
+  display: flex; gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px; margin-top: 4px;
+}
+.dist-box {
+  flex: 1; text-align: center;
+  background: var(--cream); border-radius: 8px;
+  padding: 12px 8px;
+}
+.dist-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 7vw, 36px);
+  font-weight: 700; color: var(--gold);
+  display: block; line-height: 1;
+}
+.dist-lbl { font-size: 10px; color: var(--light); letter-spacing: 1px; margin-top: 4px; display: block; }
+.video-link {
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 10px; padding: 16px;
+  display: flex; gap: 14px; align-items: center;
+  text-decoration: none; margin-bottom: 16px;
+}
+.play-btn {
+  width: 44px; height: 44px;
+  background: var(--gold); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 16px;
+}
+.video-link-text { flex: 1; }
+.video-link-text strong { color: white; font-size: 14px; display: block; margin-bottom: 3px; }
+.video-link-text span { color: #888; font-size: 12px; }
+.val-box {
+  background: var(--forest);
+  border-left: 5px solid var(--gold-border);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 20px 20px 22px;
+}
+.val-box p { color: rgba(255,255,255,0.9); margin: 0; font-size: 16px; line-height: 1.8; }
+.val-box strong { color: var(--gold-border); }
+
+/* ── VIEW SECTION ── */
+.view-sec { background: var(--cream-dk); }
+.imagine-box {
+  background: var(--gold-pale);
+  border-left: 5px solid var(--gold-border);
+  border-radius: 0 10px 10px 0;
+  padding: 22px 22px 22px 24px;
+  margin-bottom: 24px;
+}
+.imagine-box p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-size: clamp(16px, 4.5vw, 20px);
+  color: var(--forest); line-height: 1.7; margin: 0;
+}
+.muss-badge {
+  background: var(--gold-pale);
+  border: 2.5px solid var(--gold-border);
+  border-radius: 12px; padding: 18px;
+  text-align: center; margin-bottom: 24px;
+}
+.muss-badge p {
+  font-size: 16px; font-weight: 700; color: var(--black);
+  margin: 0; line-height: 1.5;
+}
+.aqi-row { display: flex; gap: 12px; margin-bottom: 16px; }
+.aqi-box {
+  flex: 1; border-radius: 12px; padding: 20px 12px;
+  text-align: center;
+}
+.aqi-box.good { background: var(--green-pale); border: 2px solid var(--green-mid); }
+.aqi-box.bad { background: var(--red-pale); border: 2px solid var(--red-dk); }
+.aqi-num-big {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(52px, 14vw, 72px);
+  font-weight: 900; line-height: 1; display: block;
+}
+.aqi-box.good .aqi-num-big { color: var(--green-mid); }
+.aqi-box.bad .aqi-num-big { color: var(--red-dk); }
+.aqi-lbl { font-size: 11px; font-weight: 700; letter-spacing: 1px; display: block; margin-top: 4px; }
+.aqi-box.good .aqi-lbl { color: var(--green-mid); }
+.aqi-box.bad .aqi-lbl { color: var(--red-dk); }
+.aqi-desc { font-size: 12px; display: block; margin-top: 4px; }
+.aqi-box.good .aqi-desc { color: var(--green-ok); }
+.aqi-box.bad .aqi-desc { color: var(--red-dk); }
+
+/* ── INVESTMENT ── */
+.invest-sec { background: var(--forest); }
+.price-hero {
+  text-align: center;
+  background: rgba(255,255,255,0.04);
+  border: 2px solid rgba(184,134,11,0.4);
+  border-radius: 14px; padding: 28px 16px;
+  margin-bottom: 24px;
+}
+.price-big {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(52px, 15vw, 80px);
+  font-weight: 900; color: white; line-height: 1;
+  display: block;
+}
+.price-unit { font-size: 13px; color: rgba(255,255,255,0.4); letter-spacing: 2px; margin-top: 6px; display: block; }
+.growth-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(46,125,50,0.2);
+  border: 1px solid rgba(76,175,80,0.5);
+  color: #81C784; padding: 8px 16px;
+  border-radius: 20px; font-size: 13px; font-weight: 700;
+  margin-top: 12px;
+}
+.bar-section { margin-bottom: 24px; }
+.bar-label {
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.4); margin-bottom: 12px; display: block;
+}
+.bar-row { margin-bottom: 10px; }
+.bar-meta { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.bar-place { font-size: 13px; color: rgba(255,255,255,0.65); }
+.bar-price { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.5); }
+.bar-place.highlight { color: white; font-weight: 700; }
+.bar-price.highlight { color: var(--gold-border); }
+.bar-track { height: 8px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; background: var(--forest-lt); }
+.bar-fill.hl { background: linear-gradient(90deg, var(--gold), var(--gold-border)); }
+.rr-box {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(184,134,11,0.25);
+  border-radius: 10px; padding: 20px;
+  text-align: center;
+}
+.rr-box p { color: rgba(255,255,255,0.7); margin: 0; font-size: 15px; line-height: 1.7; }
+.rr-box strong { color: var(--gold-border); font-size: 18px; }
+
+/* ── PLOTS ── */
+.plots-sec { background: var(--white); }
+.plot-card {
+  border-radius: 14px; padding: 24px;
+  margin-bottom: 16px;
+}
+.plot-card.featured {
+  border: 2.5px solid var(--gold-border);
+  background: white;
+  box-shadow: 0 4px 24px rgba(184,134,11,0.12);
+}
+.plot-card.standard {
+  background: var(--forest-mid);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.plot-tag {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 1.5px; padding: 5px 12px; border-radius: 20px;
+  margin-bottom: 14px;
+}
+.plot-tag.feat { background: var(--gold-pale); color: var(--gold); border: 1px solid var(--gold-border); }
+.plot-tag.std { background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.6); }
+.plot-size {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 7vw, 38px);
+  font-weight: 700; line-height: 1.1;
+  margin-bottom: 6px;
+}
+.plot-card.featured .plot-size { color: var(--black); }
+.plot-card.standard .plot-size { color: var(--gold-border); }
+.plot-price { font-size: clamp(20px, 5vw, 26px); font-weight: 700; margin-bottom: 14px; }
+.plot-card.featured .plot-price { color: var(--gold); }
+.plot-card.standard .plot-price { color: var(--gold-border); }
+.legal-tag {
+  background: var(--green-pale);
+  border: 1px solid var(--green-mid);
+  border-radius: 6px; padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 13px; color: var(--green-ok);
+  font-weight: 600;
+}
+.plot-uses li {
+  list-style: none; font-size: 14px;
+  padding: 8px 0; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
+}
+.plot-card.standard .plot-uses li { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.1); }
+.plot-uses li:last-child { border-bottom: none; }
+
+/* ── SUBSIDY ── */
+.subsidy-sec { background: var(--gold-pale); }
+.fifty-box {
+  background: var(--forest);
+  border: 3px solid var(--gold-border);
+  border-radius: 16px; padding: 30px 20px;
+  text-align: center; margin-bottom: 24px;
+}
+.fifty-up { font-size: 14px; color: rgba(255,255,255,0.5); letter-spacing: 2px; display: block; }
+.fifty-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(80px, 22vw, 120px);
+  font-weight: 900; color: var(--gold-border);
+  display: block; line-height: 0.95;
+}
+.fifty-label {
+  font-size: 15px; font-weight: 700; color: white;
+  margin-top: 8px; display: block; line-height: 1.5;
+}
+.example-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+.example-table th {
+  background: var(--forest); color: white;
+  padding: 10px 14px; font-size: 13px; text-align: left;
+}
+.example-table td {
+  padding: 10px 14px; font-size: 14px; color: var(--dark);
+  border-bottom: 1px solid var(--border);
+}
+.example-table tr.highlight td {
+  background: var(--green-pale); color: var(--green-ok);
+  font-weight: 700;
+}
+.example-table tr.sub-row td {
+  background: #F1F8E9; color: var(--green-mid); font-weight: 700;
+}
+.benefit-row {
+  display: flex; gap: 10px; margin-bottom: 10px;
+}
+.benefit-box {
+  flex: 1; background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 10px;
+  text-align: center;
+}
+.benefit-icon { font-size: 24px; display: block; margin-bottom: 6px; }
+.benefit-title { font-size: 12px; font-weight: 700; color: var(--black); display: block; }
+.benefit-desc { font-size: 11px; color: var(--light); margin-top: 3px; display: block; }
+
+/* ── LIFESTYLE ── */
+.lifestyle-sec { background: var(--cream-dk); }
+.ls-card {
+  border-radius: 10px; padding: 14px 16px;
+  margin-bottom: 8px;
+  display: flex; gap: 14px; align-items: center;
+}
+.ls-card.feat { background: var(--forest-mid); }
+.ls-card.reg { background: white; border: 1px solid var(--border); }
+.ls-icon { font-size: 24px; flex-shrink: 0; width: 36px; text-align: center; }
+.ls-name { font-size: 14px; font-weight: 700; line-height: 1.3; }
+.ls-card.feat .ls-name { color: rgba(255,240,180,0.95); }
+.ls-card.reg .ls-name { color: var(--black); }
+.ls-dist { font-size: 12px; font-weight: 700; margin-top: 2px; }
+.ls-card.feat .ls-dist { color: #FFD54F; }
+.ls-card.reg .ls-dist { color: var(--green-mid); }
+.ls-note { font-size: 11px; color: var(--light); margin-top: 2px; }
+.express-box {
+  background: #1A237E;
+  border: 2px solid #5C6BC0;
+  border-radius: 12px; padding: 18px;
+  text-align: center; margin-top: 12px;
+}
+.express-box p { color: white; margin: 0; font-size: 15px; font-weight: 600; line-height: 1.7; }
+
+/* ── POLICY ── */
+.policy-sec { background: var(--white); }
+.date-badge {
+  background: var(--amber-bg);
+  border: 1.5px solid var(--amber);
+  border-radius: 8px; padding: 12px 16px;
+  font-size: 13px; font-weight: 700; color: var(--amber);
+  margin-bottom: 20px; display: block; text-align: center;
+}
+.policy-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold-border);
+  border-radius: 0 10px 10px 0;
+  padding: 18px; margin-bottom: 12px;
+  display: flex; gap: 14px;
+}
+.policy-icon { font-size: 26px; flex-shrink: 0; }
+.policy-title { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 5px; }
+.policy-body { font-size: 13px; color: var(--mid); line-height: 1.7; margin-bottom: 8px; }
+.policy-link { font-size: 12px; color: var(--blue-dark); font-weight: 600; text-decoration: none; }
+.policy-link:hover { text-decoration: underline; }
+
+/* ── SCARCITY ── */
+.scarcity-sec { background: var(--cream); }
+.scar-item {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 16px 18px; background: white;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold-border);
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 10px;
+}
+.scar-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.scar-title { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
+.scar-desc { font-size: 13px; color: var(--mid); line-height: 1.7; }
+
+/* ── REVIEWS ── */
+.review-card {
+  background: white;
+  border-left: 4px solid var(--gold-border);
+  border-radius: 0 10px 10px 0;
+  padding: 18px; margin-bottom: 10px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold-border);
+}
+.review-stars { color: var(--gold); font-size: 14px; margin-bottom: 6px; }
+.review-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-size: clamp(15px, 4vw, 18px);
+  color: var(--forest); line-height: 1.6; margin-bottom: 8px;
+}
+.review-src { font-size: 11px; color: var(--light); }
+
+/* ── CTA ── */
+.cta-sec { background: var(--forest); padding: 60px 20px; text-align: center; }
+.cta-sec-inner { max-width: 540px; margin: 0 auto; }
+.cta-checklist {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 20px;
+  margin-bottom: 28px; text-align: left;
+}
+.cta-check { display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 16px; color: white; }
+.cta-check:last-child { border-bottom: none; }
+.check-yes { color: #81C784; font-weight: 700; font-size: 18px; flex-shrink: 0; }
+.check-no { color: rgba(255,255,255,0.3); font-weight: 700; font-size: 18px; flex-shrink: 0; }
+.main-wa {
+  display: block; width: 100%;
+  background: #25D366; color: white;
+  padding: 20px; border-radius: 10px;
+  font-size: 18px; font-weight: 700;
+  text-decoration: none; text-align: center;
+  box-shadow: 0 6px 30px rgba(37,211,102,0.45);
+  margin-bottom: 16px; line-height: 1.4;
+}
+.trust-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 10px; margin-bottom: 28px;
+}
+.trust-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px; padding: 12px;
+  font-size: 13px; color: rgba(255,255,255,0.7);
+  text-align: center;
+}
+.trust-item .ti { color: #81C784; font-size: 16px; display: block; margin-bottom: 4px; }
+.links-sec { text-align: left; margin-top: 32px; }
+.link-row {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.link-row:last-child { border-bottom: none; }
+.link-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+.link-name { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.8); display: block; margin-bottom: 2px; }
+.link-url { font-size: 12px; color: #82B1FF; word-break: break-all; }
+
+/* ── FOOTER ── */
+footer {
+  background: #060e06; padding: 28px 20px;
+  text-align: center;
+}
+footer p { font-size: 11px; color: rgba(255,255,255,0.25); line-height: 1.8; margin: 0; }
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px; font-weight: 700; color: var(--gold-border);
+  letter-spacing: 4px; display: block; margin-bottom: 8px;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+.reveal {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+
+/* ── COUNT UP ── */
+.count-up { display: inline; }
+
+/* ── MISC ── */
+a { color: inherit; }
+.centered { text-align: center; }
+.section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--gold);
+  display: block; margin-bottom: 8px;
+}
+
+/* Numbers animate */
+.big-counter {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/91XXXXXXXXXX?text=PURVATVA%20Plot%20Enquiry%20-%20Site%20Visit%20Chahiye" 
+   class="float-wa" target="_blank">
+  💬 WhatsApp
+</a>
+
+<!-- ═══════════ COVER ═══════════ -->
+<section class="cover">
+  <div class="cover-tag">Dehradun · Dhaulas · 648m</div>
+  <h1>PURVATVA</h1>
+  <p class="cover-sub">
+    Cliff Pe Plot.<br>
+    Marriott Ke Paas.<br>
+    Mussoorie View.
+  </p>
+  <div class="cover-stats">
+    <div class="cstat">
+      <span class="cstat-num">₹35K</span>
+      <span class="cstat-lbl">Per Sq.Yd</span>
+    </div>
+    <div class="cstat">
+      <span class="cstat-num">+16.7%</span>
+      <span class="cstat-lbl">YoY Growth</span>
+    </div>
+    <div class="cstat">
+      <span class="cstat-num">AQI 35</span>
+      <span class="cstat-lbl">Delhi=350+</span>
+    </div>
+  </div>
+  <div class="cover-cta">
+    <a href="https://wa.me/91XXXXXXXXXX?text=PURVATVA%20Plot%20Enquiry" 
+       class="btn-wa" target="_blank">
+      💬 Free Site Visit Book Karo
+    </a>
+    <a href="#story" class="btn-outline">Poori Kahani Padho ↓</a>
+  </div>
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <div class="arrow-down"></div>
+  </div>
+</section>
+
+<!-- LOCATION STRIP -->
+<div style="background:white; padding:16px 20px;">
+  <div style="max-width:640px; margin:0 auto;">
+    <div class="loc-strip">
+      <span class="icon">📍</span>
+      <p>
+        <strong>Saliyawala Dhaulas, Near Garhi Cantt, Dehradun — 248003</strong><br>
+        GPS: 30.3939°N, 78.0228°E &nbsp;·&nbsp; Elevation: 648m<br>
+        <a href="https://maps.app.goo.gl/Jj6ibuHMZvKfwiEz6" target="_blank">
+          🗺️ Google Maps Pe Dekho →
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ STORY ═══════════ -->
+<section class="story-sec" id="story">
+  <div class="sec">
+    <span class="eyebrow">Ek Sach Ki Kahani</span>
+    <h1>2019 Mein<br><em>Ek Galti</em><br>Hui Thi</h1>
+    <hr class="gold-hr">
+
+    <p class="large reveal">
+      Ek dost ka call aaya. Bola —
+      <em>"Bhai, Rajpur Road pe plot hai. ₹25,000 gaj. Le le."</em>
+    </p>
+    <p class="large reveal reveal-d1">
+      Maine socha —
+      <em>"Kya rush hai? Baad mein dekhta hun."</em>
+    </p>
+
+    <div class="pull-quote reveal reveal-d2">
+      <p>"Baad mein dekhte hain" —<br>duniya ki sabse mehngi line hai.</p>
+    </div>
+
+    <p class="large reveal">
+      Woh plot aaj:
+    </p>
+    <div class="big-reveal reveal">₹1,20,000 / Gaj</div>
+    <div class="math-badge reveal reveal-d1">
+      ₹25 Lakh → ₹1.2 Crore &nbsp;·&nbsp; 5 Saal &nbsp;·&nbsp; 4.8x Return
+    </div>
+
+    <hr class="gold-hr">
+
+    <div class="reveal-box reveal">
+      <p>
+        <strong>PURVATVA</strong> abhi exactly wahan hai
+        jahan <strong>Rajpur Road 2019</strong> mein tha.<br><br>
+        Entry: <strong>₹35,000/gaj</strong> &nbsp;·&nbsp;
+        Appreciation: <strong>+16.7% YoY</strong> &nbsp;·&nbsp;
+        Aur is baar ek <strong>5-star Marriott resort sirf 630m door</strong> mein abhi khula.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 300 FEET ═══════════ -->
+<section class="cliff-sec">
+  <div style="max-width:640px; margin:0 auto;">
+    <span class="eyebrow" style="color:rgba(184,134,11,0.8);">Noon Nadi — Seedha Neeche</span>
+    <span class="cliff-num reveal">300</span>
+    <span class="cliff-unit reveal reveal-d1">FEET</span>
+    <span class="cliff-sub reveal reveal-d2">Noon Nadi — Seedha Neeche</span>
+    <p style="color:rgba(255,255,255,0.6); margin-top:16px; font-size:15px;" class="reveal reveal-d3">
+      Aapke plot ki boundary pe khade ho. Neeche dekho —
+      dense jungle ke beech Noon Nadi ka raaz.
+    </p>
+
+    <div class="forest-badge reveal">
+      <span class="icon">🌲</span>
+      <p>
+        <strong>Dense Jungle = Permanent Protection.</strong>
+        Nadi seedhi nahi dikhti — 300ft ghane jungle ne chhupa rakha hai.
+        Yahi jungle legal buffer ban jaata hai.
+        Koi builder nahi aa sakta kabhi.
+        <strong>Aapka view hamesha safe.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ MARRIOTT ═══════════ -->
+<section class="marriott-sec" id="marriott">
+  <div class="sec">
+    <span class="eyebrow">The Marriott Validation</span>
+    <h1>Jab ₹500 Crore Ki<br><em>Company</em><br>Aapka Neighbour Bane...</h1>
+    <hr class="gold-hr">
+
+    <div class="hotel-card reveal">
+      <div class="stars-row">★★★★★ &nbsp; Marriott Bonvoy · Opened: 24 February 2026</div>
+      <div class="hotel-name">Le Méridien Dehradun<br>Resort & Spa</div>
+      <p class="hotel-meta">
+        Santla Devi Mandir Marg, Khabarwala, Galajwari, Dehradun 248141<br>
+        103 luxury rooms & suites · Noon Nadi (Nun River) riverfront<br>
+        Mid-century modern design · Marriott Bonvoy property
+      </p>
+      <div class="dist-row">
+        <div class="dist-box">
+          <span class="dist-num">~630m</span>
+          <span class="dist-lbl">AIR DISTANCE</span>
+          <span class="dist-lbl">FROM PURVATVA</span>
+        </div>
+        <div class="dist-box">
+          <span class="dist-num">~5 km</span>
+          <span class="dist-lbl">ROAD DISTANCE</span>
+          <span class="dist-lbl">~12 MIN DRIVE</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://www.hotelsescape.com/le-meridien-dehradun-resort-spa-in-india"
+       class="video-link reveal" target="_blank">
+      <div class="play-btn">▶</div>
+      <div class="video-link-text">
+        <strong>Le Méridien Dehradun — Official Video Tour</strong>
+        <span>hotelsescape.com · Wahi Noon Nadi · Wahi valley</span>
+      </div>
+    </a>
+
+    <a href="https://www.marriott.com/en-us/hotels/dedmd-le-meridien-dehradun-resort-and-spa/overview/"
+       target="_blank"
+       style="display:block; padding:12px 16px; background:var(--blue-pale); border:1px solid var(--blue-dark); border-radius:8px; color:var(--blue-dark); font-size:13px; font-weight:600; margin-bottom:20px; text-decoration:none;">
+      🔗 marriott.com — Le Méridien Dehradun Official →
+    </a>
+
+    <div class="val-box reveal">
+      <p>
+        Marriott International ne ₹500+ Crore lagaaye usi Noon Nadi ke kinare —
+        jispe PURVATVA ki cliff khadi hai.<br><br>
+        <strong>Woh neeche hain. Aap 300 feet upar hain.<br>
+        View unhe nahi milta — woh aapke plot ki taraf dekh rahe hain.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ VIEW ═══════════ -->
+<section class="view-sec">
+  <div class="sec">
+    <span class="eyebrow">Future Pacing</span>
+    <h1>Subah 6 Baje...<br><em>Chai Ka Cup</em></h1>
+    <hr class="gold-hr">
+
+    <div class="imagine-box reveal">
+      <p>
+        Balcony pe jao. Hawa thandi hai.<br>
+        Saamne — poori <strong style="font-style:normal;">Mussoorie ridgeline</strong>.
+        ~8.3 km. Seedhi hawa mein. Bilkul clear.<br><br>
+        Left mein Noon Nadi ki 300ft ghati.<br>
+        Right mein Cantonment ka green belt.<br><br>
+        Neeche kahin —
+        Le Méridien ke guests ₹25,000/raat de rahe hain is view ke liye.
+      </p>
+    </div>
+
+    <h2 class="reveal" style="font-size:24px; margin-bottom:16px;">
+      <strong>Aap yahan rehte hain.</strong>
+    </h2>
+
+    <div class="muss-badge reveal reveal-d1">
+      <p>🏔️ &nbsp; ~8.3 km — Mussoorie Ridgeline View<br>
+      <span style="font-size:13px; font-weight:400; color:var(--mid);">GPS Verified · Haversine Calculation · Poori Line Clear · No Obstruction</span></p>
+    </div>
+
+    <span class="section-label">Breathe Kya Chahte Ho?</span>
+    <div class="aqi-row reveal">
+      <div class="aqi-box good">
+        <span class="aqi-num-big">35</span>
+        <span class="aqi-lbl">PURVATVA AQI</span>
+        <span class="aqi-desc">Fresh Mountain Air</span>
+      </div>
+      <div class="aqi-box bad">
+        <span class="aqi-num-big">350+</span>
+        <span class="aqi-lbl">DELHI WINTER</span>
+        <span class="aqi-desc">Hazardous — Health Risk</span>
+      </div>
+    </div>
+
+    <p class="reveal reveal-d1">
+      Dehradun Master Plan 2041: Dhaulas belt =
+      <strong>Eco-Wellness Corridor</strong>.
+      Koi commercial ya high-rise kabhi nahi aayega.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ INVESTMENT ═══════════ -->
+<section class="invest-sec" id="investment">
+  <div class="sec">
+    <span class="eyebrow" style="color:rgba(184,134,11,0.8);">Numbers Jo Bolte Hain</span>
+    <h2 class="light reveal">Entry Price — Abhi</h2>
+    <hr class="gold-hr" style="background:linear-gradient(90deg,transparent,rgba(184,134,11,0.5),transparent);">
+
+    <div class="price-hero reveal">
+      <span class="price-big">₹35,000</span>
+      <span class="price-unit">PER SQUARE YARD · FREEHOLD · RESIDENTIAL LAND</span>
+      <div class="growth-badge">↑ +16.7% Year-on-Year (99acres.com Verified)</div>
+    </div>
+
+    <div class="bar-section reveal">
+      <span class="bar-label">Comparable Areas — Kitna Sasta Hai Purvatva?</span>
+
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span class="bar-place highlight">✦ PURVATVA — Dhaulas</span>
+          <span class="bar-price highlight">₹35,000</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill hl" style="width:22%"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span class="bar-place">Sahastradhara Road</span>
+          <span class="bar-price">₹72,000</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:45%"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span class="bar-place">GMS Road</span>
+          <span class="bar-price">₹80,000</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:50%"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span class="bar-place">Mussoorie Road</span>
+          <span class="bar-price">₹90,000</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:57%"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-meta">
+          <span class="bar-place">Rajpur Road</span>
+          <span class="bar-price">₹1,20,000</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:76%"></div></div>
+      </div>
+    </div>
+
+    <div class="rr-box reveal">
+      <p>
+        Rajpur Road &nbsp;2012: ₹25,000<br>
+        Rajpur Road &nbsp;2025: <strong>₹1,20,000 (4.8x)</strong><br><br>
+        <strong>PURVATVA 2025: ₹35,000</strong><br>
+        <em style="color:rgba(255,255,255,0.5);">2030: ??? — Aap decide karo.</em>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PLOTS ═══════════ -->
+<section class="plots-sec" id="plots">
+  <div class="sec">
+    <span class="eyebrow">Apna Plot Choose Karo</span>
+    <h1>Farmhouse. Villa.<br><em>Health Resort.</em><br>Ye Sab Yahan.</h1>
+    <hr class="gold-hr">
+    <p class="large reveal">
+      PURVATVA ek <strong>gated plotted community</strong> hai.
+      Har plot ka freehold title. Apna vision — apna plot.
+    </p>
+
+    <!-- Card 1 -->
+    <div class="plot-card featured reveal">
+      <span class="plot-tag feat">✦ Sabse Popular — Direct Eligible</span>
+      <div class="plot-size">200 – 298 Sq. Yards</div>
+      <div class="plot-price">₹70 Lakh – ₹1.04 Crore</div>
+      <div class="legal-tag">
+        ✅ Outsiders directly eligible — 167–249 sqm &lt; 250 sqm<br>
+        <span style="font-weight:400; font-size:12px;">Bhu Kanoon 2025 · No special permission needed</span>
+      </div>
+      <ul class="plot-uses">
+        <li>🏡 &nbsp; Luxury Farmhouse / Villa</li>
+        <li>🏖️ &nbsp; Weekend Home / Second Home</li>
+        <li>🧘 &nbsp; Health & Ayush Resort (3–5 rooms)</li>
+        <li>🌿 &nbsp; Yoga / Wellness Center</li>
+        <li>🏠 &nbsp; Boutique Stay / Airbnb</li>
+        <li>👴 &nbsp; Retirement Home</li>
+      </ul>
+      <a href="https://kumaonplanner.com/uttarakhand-land-laws-for-outsiders/"
+         target="_blank"
+         style="display:block; margin-top:16px; font-size:12px; color:var(--blue-dark); font-weight:600;">
+        📋 Bhu Kanoon 2025 — Full Legal Details →
+      </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="plot-card standard reveal reveal-d1">
+      <span class="plot-tag std">Premium</span>
+      <div class="plot-size">300+ Sq. Yards</div>
+      <div class="plot-price">₹1.05 Crore+</div>
+      <div class="legal-tag" style="background:rgba(46,125,50,0.15); border-color:rgba(76,175,80,0.4); color:#81C784;">
+        ✅ DM Approval Process — ~30-45 Days · Standard Route
+      </div>
+      <ul class="plot-uses">
+        <li style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.1);">🏨 &nbsp; Full Boutique Resort / Hotel</li>
+        <li style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.1);">💒 &nbsp; Destination Wedding Venue</li>
+        <li style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.1);">🧖 &nbsp; Wellness & Ayush Spa Center</li>
+        <li style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.1);">🌲 &nbsp; Adventure Eco-Tourism Lodge</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SUBSIDY ═══════════ -->
+<section class="subsidy-sec" id="subsidy">
+  <div class="sec">
+    <span class="eyebrow">Ek Baat Aur — Jo Sirf Investors Jaante Hain</span>
+    <h1>Sarkar Deti Hai<br><em>Up To 50%</em><br>Wapas</h1>
+    <hr class="gold-hr">
+
+    <div class="fifty-box reveal">
+      <span class="fifty-up">UP TO</span>
+      <span class="fifty-num">50%</span>
+      <span class="fifty-label">
+        Capital Investment Subsidy<br>
+        Uttarakhand Tourism Policy 2023 · Category-C Areas
+      </span>
+    </div>
+
+    <h3 class="reveal" style="font-size:18px; margin-bottom:12px;">Matlab — Ek Example:</h3>
+    <table class="example-table reveal">
+      <tr><th>Component</th><th>Amount</th></tr>
+      <tr><td>200 gaj plot purchase</td><td>₹70 Lakh</td></tr>
+      <tr><td>Construction cost (resort)</td><td>₹1.00 Crore</td></tr>
+      <tr><td><strong>Total Investment</strong></td><td><strong>₹1.70 Crore</strong></td></tr>
+      <tr class="sub-row"><td>Govt Subsidy @ 50% on construction</td><td>— ₹50 Lakh WAPAS</td></tr>
+      <tr class="highlight"><td><strong>Aapki Effective Cost</strong></td><td><strong>₹1.20 Crore</strong></td></tr>
+    </table>
+
+    <h3 style="font-size:16px; margin:20px 0 12px;" class="reveal">Aur Bhi Milta Hai:</h3>
+    <div class="benefit-row reveal">
+      <div class="benefit-box">
+        <span class="benefit-icon">🏷️</span>
+        <span class="benefit-title">Stamp Duty 50% Off</span>
+        <span class="benefit-desc">Registration cost half</span>
+      </div>
+      <div class="benefit-box">
+        <span class="benefit-icon">⚡</span>
+        <span class="benefit-title">Electricity Free</span>
+        <span class="benefit-desc">5 saal duty exempt</span>
+      </div>
+      <div class="benefit-box">
+        <span class="benefit-icon">🏦</span>
+        <span class="benefit-title">6% Interest</span>
+        <span class="benefit-desc">Bank loan subsidy</span>
+      </div>
+    </div>
+
+    <a href="https://investuttarakhand.uk.gov.in/uttarakhandtourism/"
+       target="_blank"
+       style="display:block; padding:12px 16px; background:white; border:1px solid var(--border); border-radius:8px; color:var(--blue-dark); font-size:13px; font-weight:600; margin-top:16px; text-decoration:none;">
+      🔗 Official Source: investuttarakhand.uk.gov.in →
+    </a>
+    <a href="https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1738567518policy_guideline1712734170.pdf"
+       target="_blank"
+       style="display:block; padding:12px 16px; background:white; border:1px solid var(--border); border-radius:8px; color:var(--blue-dark); font-size:13px; font-weight:600; margin-top:8px; text-decoration:none;">
+      📄 UK Tourism Policy 2023 — Official PDF →
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════ LIFESTYLE ═══════════ -->
+<section class="lifestyle-sec" id="lifestyle">
+  <div class="sec">
+    <span class="eyebrow">Aapka New Neighborhood</span>
+    <h1>Sab Kuch<br><em>Haath Ke Paas</em></h1>
+    <p style="font-size:12px; color:var(--light); margin-bottom:20px;">
+      GPS verified air distances · Road distances may vary
+    </p>
+    <hr class="gold-hr">
+
+    <div class="reveal">
+      <div class="ls-card feat">
+        <span class="ls-icon">🏨</span>
+        <div>
+          <div class="ls-name">Le Méridien Dehradun Resort & Spa</div>
+          <div class="ls-dist">~630m air · ~4–6 km road</div>
+          <div class="ls-note">Marriott Bonvoy 5★ · Noon Nadi · Opened Feb 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d1">
+      <div class="ls-card reg">
+        <span class="ls-icon">🎯</span>
+        <div>
+          <div class="ls-name">Jaspal Rana Shooting Academy</div>
+          <div class="ls-dist">~3.9 km</div>
+          <div class="ls-note">Olympic coach · Manu Bhaker trained here</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="ls-card reg">
+        <span class="ls-icon">⛳</span>
+        <div>
+          <div class="ls-name">DSOI Golf Course</div>
+          <div class="ls-dist">~3–4 km · Garhi Cantt</div>
+          <div class="ls-note">Defence Services Officers Institute</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d1">
+      <div class="ls-card reg">
+        <span class="ls-icon">🕉️</span>
+        <div>
+          <div class="ls-name">Tapkeshwar Mandir</div>
+          <div class="ls-dist">~4–5 km</div>
+          <div class="ls-note">Prakritic jal Shivling pe tata hai</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="ls-card reg">
+        <span class="ls-icon">🪖</span>
+        <div>
+          <div class="ls-name">Garhi Cantt + IMA</div>
+          <div class="ls-dist">~2.5–4 km</div>
+          <div class="ls-note">Safe & secure · Defence corridor</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d1">
+      <div class="ls-card reg">
+        <span class="ls-icon">🦌</span>
+        <div>
+          <div class="ls-name">Robbers Cave (Guchhu Pani)</div>
+          <div class="ls-dist">~6 km</div>
+          <div class="ls-note">Famous natural cave & waterfall</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="ls-card reg">
+        <span class="ls-icon">💧</span>
+        <div>
+          <div class="ls-name">Sahastradhara Sulphur Springs</div>
+          <div class="ls-dist">~9–10 km</div>
+          <div class="ls-note">Natural healing therapeutic springs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d1">
+      <div class="ls-card reg">
+        <span class="ls-icon">🏙️</span>
+        <div>
+          <div class="ls-name">Dehradun City</div>
+          <div class="ls-dist">~7–8 km · ~25 min</div>
+          <div class="ls-note">All amenities · Hospitals · Schools</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="ls-card reg">
+        <span class="ls-icon">✈️</span>
+        <div>
+          <div class="ls-name">Jolly Grant Airport</div>
+          <div class="ls-dist">~20 km</div>
+          <div class="ls-note">Delhi · Mumbai · Bangalore — daily flights</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-d1">
+      <div class="ls-card reg">
+        <span class="ls-icon">🏥</span>
+        <div>
+          <div class="ls-name">AIIMS Rishikesh</div>
+          <div class="ls-dist">~55 km</div>
+          <div class="ls-note">India's top medical institute</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="express-box reveal" style="margin-top:16px;">
+      <p>
+        🛣️ &nbsp;<strong>Delhi–Dehradun Expressway — 2.5 GHANTE</strong><br>
+        Mid-2026 Opening · 210 km · NHAI · ₹13,000 Crore<br>
+        Trial run completed December 2025
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ POLICY ═══════════ -->
+<section class="policy-sec" id="policy">
+  <div class="sec">
+    <span class="eyebrow">Sarkar Ne Rasta Saaf Kar Diya</span>
+    <h1>December 2025<br><em>Cabinet</em><br>Decisions</h1>
+    <hr class="gold-hr">
+
+    <span class="date-badge reveal">
+      📅 &nbsp; Uttarakhand Cabinet · December 10, 2025 · CM Pushkar Singh Dhami
+    </span>
+
+    <div class="policy-card reveal">
+      <span class="policy-icon">🏗️</span>
+      <div>
+        <div class="policy-title">Agricultural Land Pe Resort — Bina Land Use Change</div>
+        <div class="policy-body">Ab agricultural zameen pe resort directly ban sakta hai. Koi conversion ki zaroorat nahi. Tourism development ke liye fastest approval route.</div>
+        <a href="https://www.rprealtyplus.com/news-views/uttarakhand-cabinet-approves-resort-construction-on-farmland-without-land-use-change-123162.html"
+           class="policy-link" target="_blank">
+          → Source: RP Realty Plus, Dec 12, 2025
+        </a>
+      </div>
+    </div>
+
+    <div class="policy-card reveal reveal-d1">
+      <span class="policy-icon">🛣️</span>
+      <div>
+        <div class="policy-title">Road Width Hills Mein — Sirf 6 Metres</div>
+        <div class="policy-body">Pahle road width standard zyada tha. Ab 6 metre kaafi. PURVATVA ka approach road perfectly compliant hai.</div>
+        <a href="https://www.taxtmi.com/news?id=64321"
+           class="policy-link" target="_blank">
+          → Source: TaxTMI — Official Cabinet Report
+        </a>
+      </div>
+    </div>
+
+    <div class="policy-card reveal">
+      <span class="policy-icon">🌿</span>
+      <div>
+        <div class="policy-title">Green Building = Extra FAR Bonus</div>
+        <div class="policy-body">Eco-friendly construction pe extra floor area ratio milega. PURVATVA ki natural setting green building ke liye perfectly suited.</div>
+        <a href="https://www.rprealtyplus.com/news-views/uttarakhand-cabinet-approves-resort-construction-on-farmland-without-land-use-change-123162.html"
+           class="policy-link" target="_blank">
+          → Source: RP Realty Plus — Official
+        </a>
+      </div>
+    </div>
+
+    <div class="policy-card reveal reveal-d1">
+      <span class="policy-icon">📋</span>
+      <div>
+        <div class="policy-title">Single Window Clearance — Fast Track</div>
+        <div class="policy-body">Ek hi jagah se saari permissions. Time fast. Transparent process. Investor-friendly Uttarakhand ka commitment.</div>
+        <a href="https://investuttarakhand.uk.gov.in/uttarakhandtourism/"
+           class="policy-link" target="_blank">
+          → Source: investuttarakhand.uk.gov.in
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SCARCITY + REVIEWS ═══════════ -->
+<section class="scarcity-sec">
+  <div class="sec">
+    <span class="eyebrow">Limited Plots · Genuine Scarcity</span>
+    <h1>Kuch Cheezein<br><em>Hamesha</em><br>Nahi Milti</h1>
+    <hr class="gold-hr">
+
+    <div class="scar-item reveal">
+      <span class="scar-icon">⚡</span>
+      <div>
+        <div class="scar-title">Flat Plateau — Expand Nahi Hoga</div>
+        <div class="scar-desc">Shivalik hills mein yeh rare zameen limited hai. Aur Marriott iske neeche aa gaya. Jo plots hain — wahi hain.</div>
+      </div>
+    </div>
+
+    <div class="scar-item reveal reveal-d1">
+      <span class="scar-icon">⚡</span>
+      <div>
+        <div class="scar-title">Marriott Aa Gaya — Prices Badhenge</div>
+        <div class="scar-desc">Le Méridien khulne ke baad aas paas property values naturally jump hoti hain. Early movers ko maximum gain.</div>
+      </div>
+    </div>
+
+    <div class="scar-item reveal">
+      <span class="scar-icon">⚡</span>
+      <div>
+        <div class="scar-title">Expressway 2026 = Price Jump</div>
+        <div class="scar-desc">Jab Delhi 2.5 ghante mein hoga — Dehradun real estate alag level pe jaayega. Pehle wale investors ko sabse zyada fayda.</div>
+      </div>
+    </div>
+
+    <div class="scar-item reveal reveal-d1">
+      <span class="scar-icon">⚡</span>
+      <div>
+        <div class="scar-title">Dec 2025 Policy — Fresh Window</div>
+        <div class="scar-desc">Abhi sirf savvy investors jaante hain. 6 mahine mein sab jaanenge. Best plots abhi milenge.</div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px; margin-bottom:16px; font-size:18px;" class="reveal">
+      Google Reviews — Verified
+    </h3>
+
+    <div class="review-card reveal">
+      <div class="review-stars">⭐⭐⭐⭐</div>
+      <div class="review-text">
+        "This place is lovely — so close to Dehradun yet a nature gem.
+        We bought land here — abundance of nature, good 360 views."
+      </div>
+      <div class="review-src">Google Maps · Natures Farms Dehradun · Verified</div>
+    </div>
+
+    <div class="review-card reveal reveal-d1">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">"Best place to plan your retirement home."</div>
+      <div class="review-src">Google Maps · Verified Review</div>
+    </div>
+
+    <div class="review-card reveal">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">"Mini Mussoorie."</div>
+      <div class="review-src">Google Maps · Natures Farms Dehradun</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta-sec" id="contact">
+  <div class="cta-sec-inner">
+    <span class="eyebrow" style="color:rgba(184,134,11,0.8); display:block; text-align:center; margin-bottom:12px;">
+      Teen Cheezein Hain
+    </span>
+    <h2 class="light" style="text-align:center; margin-bottom:24px;">
+      Ek Achi Investment Mein
+    </h2>
+
+    <div class="cta-checklist reveal">
+      <div class="cta-check">
+        <span class="check-yes">✓</span>
+        <span>Sahi Location — GPS verified, Marriott validated</span>
+      </div>
+      <div class="cta-check">
+        <span class="check-yes">✓</span>
+        <span>Sahi Time — Dec 2025 policy, 2026 expressway</span>
+      </div>
+      <div class="cta-check">
+        <span class="check-no">□</span>
+        <span style="color:rgba(255,255,255,0.5);">Aapka Decision — Sirf aapke haath mein</span>
+      </div>
+    </div>
+
+    <p style="color:rgba(255,255,255,0.6); text-align:center; font-style:italic; margin-bottom:28px; font-family:'Playfair Display',serif; font-size:18px;">
+      "Pehli do — check.<br>Teesri — sirf aapke haath mein hai."
+    </p>
+
+    <a href="https://wa.me/91XXXXXXXXXX?text=PURVATVA%20Plot%20Enquiry%20-%20Free%20site%20visit%20chahiye"
+       class="main-wa reveal" target="_blank">
+      💬 WhatsApp Karo — Free Site Visit Book Karo<br>
+      <span style="font-size:14px; opacity:0.85;">Seedha Developer · No Broker · No Pressure</span>
+    </a>
+
+    <div class="trust-grid reveal">
+      <div class="trust-item">
+        <span class="ti">✓</span>
+        Free Site Visit<br>No Pressure
+      </div>
+      <div class="trust-item">
+        <span class="ti">✓</span>
+        Saare Docs<br>Transparent
+      </div>
+      <div class="trust-item">
+        <span class="ti">✓</span>
+        Freehold Title<br>Registered
+      </div>
+      <div class="trust-item">
+        <span class="ti">✓</span>
+        Seedha Developer<br>No Hidden Charges
+      </div>
+    </div>
+
+    <div class="links-sec reveal">
+      <div class="link-row">
+        <span class="link-icon">📍</span>
+        <div>
+          <span class="link-name">Google Maps — PURVATVA Exact Location</span>
+          <a href="https://maps.app.goo.gl/Jj6ibuHMZvKfwiEz6" class="link-url" target="_blank">
+            maps.app.goo.gl/Jj6ibuHMZvKfwiEz6
+          </a>
+        </div>
+      </div>
+      <div class="link-row">
+        <span class="link-icon">🏨</span>
+        <div>
+          <span class="link-name">Le Méridien Dehradun — Marriott Official</span>
+          <a href="https://www.marriott.com/en-us/hotels/dedmd-le-meridien-dehradun-resort-and-spa/overview/"
+             class="link-url" target="_blank">
+            marriott.com — Le Méridien Dehradun
+          </a>
+        </div>
+      </div>
+      <div class="link-row">
+        <span class="link-icon">🎬</span>
+        <div>
+          <span class="link-name">Le Méridien Video Tour</span>
+          <a href="https://www.hotelsescape.com/le-meridien-dehradun-resort-spa-in-india"
+             class="link-url" target="_blank">
+            hotelsescape.com/le-meridien-dehradun
+          </a>
+        </div>
+      </div>
+      <div class="link-row">
+        <span class="link-icon">📋</span>
+        <div>
+          <span class="link-name">Bhu Kanoon 2025 — Full Legal Details</span>
+          <a href="https://kumaonplanner.com/uttarakhand-land-laws-for-outsiders/"
+             class="link-url" target="_blank">
+            kumaonplanner.com/uttarakhand-land-laws
+          </a>
+        </div>
+      </div>
+      <div class="link-row">
+        <span class="link-icon">🏗️</span>
+        <div>
+          <span class="link-name">Dec 2025 Resort Policy — Official News</span>
+          <a href="https://www.rprealtyplus.com/news-views/uttarakhand-cabinet-approves-resort-construction-on-farmland-without-land-use-change-123162.html"
+             class="link-url" target="_blank">
+            rprealtyplus.com — Dec 12, 2025
+          </a>
+        </div>
+      </div>
+      <div class="link-row">
+        <span class="link-icon">💰</span>
+        <div>
+          <span class="link-name">UK Tourism Subsidies — Official Portal</span>
+          <a href="https://investuttarakhand.uk.gov.in/uttarakhandtourism/"
+             class="link-url" target="_blank">
+            investuttarakhand.uk.gov.in
+          </a>
+        </div>
+      </div>
+      <div class="link-row">
+        <span class="link-icon">📊</span>
+        <div>
+          <span class="link-name">Dhaulas Price Data — 99acres Verified</span>
+          <a href="https://www.99acres.com/dhaulas-dehradun-overview-piffid"
+             class="link-url" target="_blank">
+            99acres.com/dhaulas-dehradun
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">PURVATVA</span>
+  <p>
+    Saliyawala Dhaulas, Near Garhi Cantt, Dehradun — 248003<br>
+    GPS: 30.3939°N, 78.0228°E · Elevation: 648 metres<br>
+    All distances are air distances — road distances may vary<br>
+    Subsidy subject to eligibility under Uttarakhand Tourism Policy 2023<br>
+    All facts GPS & source verified · March 2026
+  </p>
+</footer>
+
+<script>
+// ── SCROLL REVEAL ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(r => observer.observe(r));
+
+// ── BAR ANIMATION ──
+const bars = document.querySelectorAll('.bar-fill');
+const barObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const targetW = e.target.style.width;
+      e.target.style.width = '0';
+      e.target.style.transition = 'width 1.2s cubic-bezier(0.25,0.46,0.45,0.94)';
+      requestAnimationFrame(() => {
+        setTimeout(() => { e.target.style.width = targetW; }, 100);
+      });
+      barObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+bars.forEach(b => barObs.observe(b));
+
+// ── AQI COUNT UP ──
+function countUp(el, target, duration) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target + (target >= 350 ? '+' : ''); clearInterval(timer); }
+    else { el.textContent = Math.floor(start) + (target >= 350 && Math.floor(start) >= 349 ? '+' : ''); }
+  }, 16);
+}
+const aqiObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const nums = e.target.querySelectorAll('.aqi-num-big');
+      nums.forEach(n => {
+        const val = n.textContent.replace('+','');
+        countUp(n, parseInt(val), 1500);
+      });
+      aqiObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.aqi-row').forEach(r => aqiObs.observe(r));
+</script>
+</body>
+</html>
