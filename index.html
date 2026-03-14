@@ -708,9 +708,44 @@ a { color: inherit; }
 </head>
 <body>
 
+<!-- WHATSAPP SETUP MODAL -->
+<div id="wa-modal" style="
+  position:fixed; inset:0; z-index:9999;
+  background:rgba(0,0,0,0.85);
+  display:flex; align-items:center; justify-content:center;
+  padding:20px;
+">
+  <div style="
+    background:white; border-radius:16px;
+    padding:28px 24px; max-width:380px; width:100%;
+    text-align:center;
+  ">
+    <div style="font-size:40px; margin-bottom:12px;">💬</div>
+    <h3 style="font-family:'Playfair Display',serif; font-size:22px; margin-bottom:8px; color:#1A1A1A;">
+      Apna WhatsApp Number Daalo
+    </h3>
+    <p style="font-size:14px; color:#666; margin-bottom:20px; line-height:1.6;">
+      Brochure ke saare WhatsApp buttons<br>aapke number se connect ho jaayenge
+    </p>
+    <div style="display:flex; border:2px solid #25D366; border-radius:10px; overflow:hidden; margin-bottom:16px;">
+      <span style="background:#f5f5f5; padding:14px; font-size:16px; font-weight:700; color:#333; border-right:1px solid #ddd;">+91</span>
+      <input id="wa-input" type="tel" maxlength="10" placeholder="10 digit number"
+        style="flex:1; padding:14px; font-size:16px; border:none; outline:none; color:#1A1A1A;"
+      />
+    </div>
+    <button onclick="setWANumber()" style="
+      width:100%; background:#25D366; color:white;
+      border:none; padding:16px; border-radius:10px;
+      font-size:17px; font-weight:700; cursor:pointer;
+    ">✅ Set Karo — Brochure Ready!</button>
+    <p style="font-size:11px; color:#aaa; margin-top:12px;">
+      Sirf aapke device pe save hoga · Koi server nahi
+    </p>
+  </div>
+</div>
+
 <!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/91XXXXXXXXXX?text=PURVATVA%20Plot%20Enquiry%20-%20Site%20Visit%20Chahiye" 
-   class="float-wa" target="_blank">
+<a id="float-wa-btn" href="#" class="float-wa" target="_blank">
   💬 WhatsApp
 </a>
 
@@ -738,8 +773,7 @@ a { color: inherit; }
     </div>
   </div>
   <div class="cover-cta">
-    <a href="https://wa.me/91XXXXXXXXXX?text=PURVATVA%20Plot%20Enquiry" 
-       class="btn-wa" target="_blank">
+    <a id="cover-wa-btn" href="#" class="btn-wa" target="_blank">
       💬 Free Site Visit Book Karo
     </a>
     <a href="#story" class="btn-outline">Poori Kahani Padho ↓</a>
@@ -1399,8 +1433,7 @@ a { color: inherit; }
       "Pehli do — check.<br>Teesri — sirf aapke haath mein hai."
     </p>
 
-    <a href="https://wa.me/91XXXXXXXXXX?text=PURVATVA%20Plot%20Enquiry%20-%20Free%20site%20visit%20chahiye"
-       class="main-wa reveal" target="_blank">
+    <a id="main-wa-btn" href="#" class="main-wa" target="_blank">
       💬 WhatsApp Karo — Free Site Visit Book Karo<br>
       <span style="font-size:14px; opacity:0.85;">Seedha Developer · No Broker · No Pressure</span>
     </a>
@@ -1511,6 +1544,45 @@ a { color: inherit; }
 </footer>
 
 <script>
+// ── WHATSAPP NUMBER SYSTEM ──
+const WA_MSG = "PURVATVA%20Plot%20Enquiry%20-%20Site%20Visit%20Chahiye";
+
+function waLink(num) {
+  return `https://wa.me/91${num}?text=${WA_MSG}`;
+}
+
+function updateAllWABtns(num) {
+  const link = waLink(num);
+  ['float-wa-btn','cover-wa-btn','main-wa-btn'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.href = link;
+  });
+}
+
+function setWANumber() {
+  const num = document.getElementById('wa-input').value.trim();
+  if (num.length !== 10 || isNaN(num)) {
+    alert('Sahi 10 digit number daalo!');
+    return;
+  }
+  localStorage.setItem('purvatva_wa', num);
+  updateAllWABtns(num);
+  document.getElementById('wa-modal').style.display = 'none';
+}
+
+// Check on load
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('purvatva_wa');
+  if (saved) {
+    updateAllWABtns(saved);
+    document.getElementById('wa-modal').style.display = 'none';
+  }
+  // Allow skip with tap outside
+  document.getElementById('wa-modal').addEventListener('click', function(e) {
+    if (e.target === this) this.style.display = 'none';
+  });
+});
+
 // ── SCROLL REVEAL ──
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
