@@ -737,10 +737,27 @@ a { color: inherit; }
       width:100%; background:#25D366; color:white;
       border:none; padding:16px; border-radius:10px;
       font-size:17px; font-weight:700; cursor:pointer;
-    ">✅ Set Karo — Brochure Ready!</button>
-    <p style="font-size:11px; color:#aaa; margin-top:12px;">
-      Sirf aapke device pe save hoga · Koi server nahi
-    </p>
+    ">✅ Set Karo — Apna Link Pao!</button>
+
+    <!-- Broker shareable link box -->
+    <div id="broker-link-box" style="display:none; margin-top:16px; text-align:left;">
+      <p style="font-size:13px; font-weight:700; color:#1B5E20; margin-bottom:8px;">
+        🎉 Aapka Personal Link — Yahi Clients Ko Bhejo:
+      </p>
+      <input id="broker-link-text" type="text" readonly style="
+        width:100%; padding:10px; font-size:12px;
+        border:1px solid #ddd; border-radius:6px;
+        background:#f5f5f5; color:#333; margin-bottom:8px;
+      "/>
+      <button id="copy-btn" onclick="copyBrokerLink()" style="
+        width:100%; background:#1A3020; color:white;
+        border:none; padding:12px; border-radius:8px;
+        font-size:15px; font-weight:700; cursor:pointer;
+      ">📋 Copy Link</button>
+      <p style="font-size:11px; color:#888; margin-top:8px; line-height:1.5;">
+        Is link se client seedha brochure dekhega — koi box nahi aayega
+      </p>
+    </div>
   </div>
 </div>
 
@@ -1546,6 +1563,7 @@ a { color: inherit; }
 <script>
 // ── WHATSAPP NUMBER SYSTEM ──
 const WA_MSG = "PURVATVA%20Plot%20Enquiry%20-%20Site%20Visit%20Chahiye";
+const BASE_URL = window.location.href.split('?')[0];
 
 function waLink(num) {
   return `https://wa.me/91${num}?text=${WA_MSG}`;
@@ -1565,16 +1583,30 @@ function setWANumber() {
     alert('Sahi 10 digit number daalo!');
     return;
   }
-  localStorage.setItem('purvatva_wa', num);
   updateAllWABtns(num);
   document.getElementById('wa-modal').style.display = 'none';
+
+  // Show broker's shareable link
+  const shareLink = `${BASE_URL}?wa=${num}`;
+  document.getElementById('broker-link-box').style.display = 'block';
+  document.getElementById('broker-link-text').value = shareLink;
 }
 
-// Check on load
+function copyBrokerLink() {
+  const el = document.getElementById('broker-link-text');
+  el.select();
+  document.execCommand('copy');
+  document.getElementById('copy-btn').textContent = '✅ Copied!';
+  setTimeout(() => document.getElementById('copy-btn').textContent = '📋 Copy Link', 2000);
+}
+
+// Check on load — URL parameter se number lo
 window.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('purvatva_wa');
-  if (saved) {
-    updateAllWABtns(saved);
+  const params = new URLSearchParams(window.location.search);
+  const waNum = params.get('wa');
+  if (waNum && waNum.length === 10) {
+    // Client mode — seedha brochure, no box
+    updateAllWABtns(waNum);
     document.getElementById('wa-modal').style.display = 'none';
   }
   // Allow skip with tap outside
