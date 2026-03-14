@@ -1594,10 +1594,23 @@ function setWANumber() {
 
 function copyBrokerLink() {
   const el = document.getElementById('broker-link-text');
-  el.select();
-  document.execCommand('copy');
-  document.getElementById('copy-btn').textContent = '✅ Copied!';
-  setTimeout(() => document.getElementById('copy-btn').textContent = '📋 Copy Link', 2000);
+  const text = el.value;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      document.getElementById('copy-btn').textContent = '✅ Copied!';
+      setTimeout(() => document.getElementById('copy-btn').textContent = '📋 Copy Link', 2000);
+    });
+  } else {
+    el.focus();
+    el.select();
+    try {
+      document.execCommand('copy');
+      document.getElementById('copy-btn').textContent = '✅ Copied!';
+      setTimeout(() => document.getElementById('copy-btn').textContent = '📋 Copy Link', 2000);
+    } catch(e) {
+      alert('Link ko manually copy karo:\n\n' + text);
+    }
+  }
 }
 
 // Check on load — URL parameter se number lo
